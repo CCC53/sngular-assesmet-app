@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { Solver } from '@/app/components/Solver';
 import { useCalculating } from '@/app/hooks/useCalculating';
 
-jest.mock('../app/hooks/useCalculating', () => ({
+jest.mock('../../app/hooks/useCalculating', () => ({
     useCalculating: jest.fn(),
 }));
 

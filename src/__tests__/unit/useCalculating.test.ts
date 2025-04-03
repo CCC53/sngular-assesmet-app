@@ -2,7 +2,7 @@ import { renderHook } from "@testing-library/react";
 import { useCalculating } from "@/app/hooks/useCalculating";
 import { getNthPrime, getFibonacci, triangularNumber, getResult } from "@/app/helpers/operations";
 
-jest.mock("../app/helpers/operations", () => ({
+jest.mock("../../app/helpers/operations", () => ({
     getNthPrime: jest.fn(),
     getFibonacci: jest.fn(),
     triangularNumber: jest.fn(),

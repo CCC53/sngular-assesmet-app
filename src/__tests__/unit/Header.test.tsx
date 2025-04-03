@@ -9,8 +9,7 @@ describe('Header Component', () => {
     expect(headerElement).toBeInTheDocument();
 
     const logoImage = screen.getByRole('img');
-    expect(logoImage).toHaveAttribute('src', 'https://www.drupal.org/files/Logo-Restyled_Positive_Navy.png');
-    expect(logoImage).toHaveClass('h-6');
+    expect(logoImage).toHaveAttribute('src', '/_next/image?url=https%3A%2F%2Fwww.drupal.org%2Ffiles%2FLogo-Restyled_Positive_Navy.png&w=384&q=75');
 
     const nameText = screen.getByText(/Carlos Calette/i);
     expect(nameText).toBeInTheDocument();

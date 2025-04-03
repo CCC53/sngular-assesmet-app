@@ -64,13 +64,13 @@ export const Form = ({ setLoading, returnValue, cleanData }: FormProps) => {
           <div className="flex flex-col mb-5 mt-5 items-center">
             <div className="w-3/4">
               <label className="mb-3 block" htmlFor="numero-n">Número N</label>
-              <input id="numero-n"
+              <input id="numero-n" data-testid="form-input"
                 className="block w-full rounded-md border border-gray-300 py-1.5 px-2 text-lg text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none sm:text-lg"
                 type="number" placeholder="Introduce el número aquí" onChange={handleOnChange} value={value} min={3} />
             </div>
             <div className="w-3/4 mt-2">
               { 
-                error && <span className="text-sm text-red-500">{error}</span>
+                error && <span data-testid="error-message" className="text-sm text-red-500">{error}</span>
               }
             </div>
           </div>
