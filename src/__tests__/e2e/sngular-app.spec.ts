@@ -2,8 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('f', () => {
   test.beforeEach(async ({ page }) => {
-    // await page.goto('https://sngular-assesmet-app-5k34.vercel.app');
-    await page.goto('http://localhost:3000');
+    await page.goto('https://sngular-assesmet-app-5k34.vercel.app');
   });
 
   test('debe mostrar el header', async({ page }) => {
