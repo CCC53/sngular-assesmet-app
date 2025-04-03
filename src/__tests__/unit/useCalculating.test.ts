@@ -19,7 +19,7 @@ describe('useCalculating Hook', () => {
         jest.clearAllMocks();
     });
 
-    test("calcula valores correctos cuando n = 4", () => {
+    test("asigna los valores correctos cuando n = 4", () => {
         mockedGetNthPrime.mockReturnValue(7);
         mockedGetFibonacci.mockReturnValue(1);
         mockedTriangularNumber.mockReturnValue(10);
@@ -32,7 +32,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(210);
     });
 
-    test("calcula valores correctos cuando n = 5", () => {
+    test("asigna los valores correctos cuando n = 5", () => {
         mockedGetNthPrime.mockReturnValue(11);
         mockedGetFibonacci.mockReturnValue(2);
         mockedTriangularNumber.mockReturnValue(15);
@@ -45,7 +45,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(247.5);
     });
 
-    test("calcula valores correctos cuando n = 7", () => {
+    test("asigna los valores correctos cuando n = 7", () => {
         mockedGetNthPrime.mockReturnValue(17);
         mockedGetFibonacci.mockReturnValue(5);
         mockedTriangularNumber.mockReturnValue(28);
@@ -58,7 +58,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(285.6);
     });
 
-    test("calcula valores correctos cuando n = 10", () => {
+    test("asigna los valores correctos cuando n = 10", () => {
         mockedGetNthPrime.mockReturnValue(29);
         mockedGetFibonacci.mockReturnValue(21);
         mockedTriangularNumber.mockReturnValue(55);
@@ -71,7 +71,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(227.85714285714286);
     });
 
-    test("calcula valores correctos cuando n = 18", () => {
+    test("asigna los valores correctos cuando n = 18", () => {
         mockedGetNthPrime.mockReturnValue(61);
         mockedGetFibonacci.mockReturnValue(987);
         mockedTriangularNumber.mockReturnValue(171);
@@ -84,7 +84,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(31.70516717325228);
     });
 
-    test("calcula valores correctos cuando n = 24", () => {
+    test("asigna los valores correctos cuando n = 24", () => {
         mockedGetNthPrime.mockReturnValue(89);
         mockedGetFibonacci.mockReturnValue(17711);
         mockedTriangularNumber.mockReturnValue(300);
@@ -97,7 +97,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(4.522613065326633);
     });
 
-    test("calcula valores correctos cuando n = 30", () => {
+    test("asigna los valores correctos cuando n = 30", () => {
         mockedGetNthPrime.mockReturnValue(113);
         mockedGetFibonacci.mockReturnValue(317811);
         mockedTriangularNumber.mockReturnValue(465);
@@ -110,7 +110,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(0.49600234101399887);
     });
     
-    test("calcula valores correctos cuando n = 46", () => {
+    test("asigna los valores correctos cuando n = 46", () => {
         mockedGetNthPrime.mockReturnValue(199);
         mockedGetFibonacci.mockReturnValue(701408733);
         mockedTriangularNumber.mockReturnValue(1081);
@@ -123,7 +123,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(0.0009200869188493551);
     });
 
-    test("calcula valores correctos cuando n = 57", () => {
+    test("asigna los valores correctos cuando n = 57", () => {
         mockedGetNthPrime.mockReturnValue(269);
         mockedGetFibonacci.mockReturnValue(139583862445);
         mockedTriangularNumber.mockReturnValue(1653);
@@ -136,7 +136,7 @@ describe('useCalculating Hook', () => {
         expect(result.current.nth).toBe(0.000009556770937798217);
     });
 
-    test("calcula valores correctos cuando n = 75", () => {
+    test("asigna los valores correctos cuando n = 75", () => {
         mockedGetNthPrime.mockReturnValue(379);
         mockedGetFibonacci.mockReturnValue(806515533049393);
         mockedTriangularNumber.mockReturnValue(2850);
