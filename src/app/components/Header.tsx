@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image';
 
 export const Header = () => {
     return (
@@ -7,7 +7,7 @@ export const Header = () => {
                 <div className="flex justify-between">
                     <div className="flex space-x-7">
                         <div className="flex items-center py-4 px-2">
-                            <img src="https://www.drupal.org/files/Logo-Restyled_Positive_Navy.png" className="h-6"/>
+                            <Image src={"https://www.drupal.org/files/Logo-Restyled_Positive_Navy.png"} width={150} height={200} alt='Logo' />
                         </div>
                     </div>
                     <div className="hidden md:flex items-center space-x-3">
